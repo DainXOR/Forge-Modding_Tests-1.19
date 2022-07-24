@@ -1,6 +1,10 @@
 {
-  "item.testsmod.wolframium": "Wolframium",
-  "item.testsmod.raw_wolframium": "Raw Wolframium"
+  "item.testsmod.wolframium_ingot": "Wolframium Ingot",
+  "item.testsmod.raw_wolframite": "Raw Wolframite",
+
+  "block.testsmod.wolframite_ore": "Wolframite Ore",
+  "block.testsmod.deepslate_wolframite_ore": "Deepslate Wolframite Ore",
+  "block.testsmod.wolframium_block": "Wolframium Block"
 
 
 }

@@ -1,6 +1,7 @@
 package net.dain.testsmod;
 
 import com.mojang.logging.LogUtils;
+import net.dain.testsmod.block.ModBlocks;
 import net.dain.testsmod.item.ModItems;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -24,6 +25,7 @@ public class TestsMod
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);

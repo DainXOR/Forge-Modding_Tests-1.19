@@ -13,11 +13,11 @@ public class ModItems {
 
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, TestsMod.MOD_ID);
 
-    public static final RegistryObject<Item> WOLFRAMIUM =
-            ITEMS.register("wolframium", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+    public static final RegistryObject<Item> WOLFRAMIUM_INGOT =
+            ITEMS.register("wolframium_ingot", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
-    public static final RegistryObject<Item> RAW_WOLFRAMIUM =
-            ITEMS.register("raw_wolframium", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+    public static final RegistryObject<Item> RAW_WOLFRAMITE =
+            ITEMS.register("raw_wolframite", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
