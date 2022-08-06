@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": {"model":  "testsmod:block/reactor_block"}
+  }
+}

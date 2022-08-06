@@ -2,9 +2,29 @@
   "item.testsmod.wolframium_ingot": "Wolframium Ingot",
   "item.testsmod.raw_wolframite": "Raw Wolframite",
 
+  "item.testsmod.10_dice": "10 Dice",
+  "item.testsmod.golden_dice": "Golden Dice",
+
+  "item.testsmod.demonic_dice": "Demonic Dice",
+  "item.testsmod.light_dice": "Light Dice",
+  "item.testsmod.black_dice": "Black Dice",
+  "item.testsmod.emerald_dice": "Emerald Dice",
+
+  "item.testsmod.dragon_dice": "Dragonic Dice",
+
+  "item.testsmod.ender_dice": "Ender Dice",
+  "item.testsmod.saaa_dice": "Saaa Dice",
+
+  "item.testsmod.dice": "Dice",
+  "item.testsmod.3_dice": "3 Dice",
+  "item.testsmod.2_dice": "2 Dice",
+  "item.testsmod.0_1_dice": "0-1 Dice",
+
   "block.testsmod.wolframite_ore": "Wolframite Ore",
   "block.testsmod.deepslate_wolframite_ore": "Deepslate Wolframite Ore",
-  "block.testsmod.wolframium_block": "Wolframium Block"
+  "block.testsmod.wolframium_block": "Wolframium Block",
+  "block.testsmod.reactor_block": "Reactor",
 
-
+  "itemGroup.artifacts_tab": "Artifacts",
+  "itemGroup.hmmm_tab": "Hmmm"
 }

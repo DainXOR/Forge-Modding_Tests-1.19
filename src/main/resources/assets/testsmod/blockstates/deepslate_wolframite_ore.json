@@ -1,5 +1,6 @@
 {
   "variants": {
-    "": {"model":  "testsmod:block/deepslate_wolframite_ore"}
+    "": {
+      "model":  "testsmod:block/deepslate_wolframite_ore"}
   }
 }

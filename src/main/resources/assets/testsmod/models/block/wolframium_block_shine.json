@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "testsmod:block/wolframium_block_shine"
+    "all": "testsmod:block/wolframium_block_anim"
   }
 }

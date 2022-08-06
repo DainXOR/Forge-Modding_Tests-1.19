@@ -2,7 +2,11 @@
   "item.testsmod.wolframium_ingot": "Lingote de wolframio",
   "item.testsmod.raw_wolframite": "Wolframita en bruto",
 
+  "item.testsmod.golden_dice": "Dado dorado",
+
   "block.testsmod.wolframite_ore": "Mineral de wolframita",
   "block.testsmod.deepslate_wolframite_ore": "Mineral de wolframita profunda",
-  "block.testsmod.wolframium_block": "Bloque de Wolframio"
+  "block.testsmod.wolframium_block": "Bloque de Wolframio",
+
+  "itemGroup.hmmm_tab": "Hmmm"
 }

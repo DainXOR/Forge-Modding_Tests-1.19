@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "testsmod:block/wolframite_ore"
+    "all": "testsmod:block/wolframite_ore_anim"
   }
 }
