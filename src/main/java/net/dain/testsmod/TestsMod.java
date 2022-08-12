@@ -2,7 +2,14 @@ package net.dain.testsmod;
 
 import com.mojang.logging.LogUtils;
 import net.dain.testsmod.block.ModBlocks;
+import net.dain.testsmod.block.entity.ModBlockEntities;
 import net.dain.testsmod.item.ModItems;
+import net.dain.testsmod.painting.ModPaintings;
+import net.dain.testsmod.villager.ModVillagers;
+import net.dain.testsmod.world.feature.ModConfiguredFeatures;
+import net.dain.testsmod.world.feature.ModPlacedFeature;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -27,6 +34,12 @@ public class TestsMod
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
+        //ModBlockEntities.register(modEventBus);
+        ModPaintings.register(modEventBus);
+        ModVillagers.register(modEventBus);
+
+        ModConfiguredFeatures.register(modEventBus);
+        ModPlacedFeature.register(modEventBus);
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
@@ -36,6 +49,10 @@ public class TestsMod
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
+        event.enqueueWork(() -> {
+            ModVillagers.registerPOIs();
+        });
+
         // Some common setup code
         LOGGER.info("HELLO FROM COMMON SETUP");
         LOGGER.info("DIRT BLOCK >> {}", ForgeRegistries.BLOCKS.getKey(Blocks.DIRT));
@@ -48,6 +65,7 @@ public class TestsMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.STRAWBERRY_CROP.get(), RenderType.cutout());
         }
     }
 }

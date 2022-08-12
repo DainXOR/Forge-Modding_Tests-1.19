@@ -1,6 +1,27 @@
 1.19.x Changelog
+41.1
+====
+ - 41.1.0 Mark 1.19 RB
+
 41.0
 ====
+ - 41.0.113 Allow faces of an "elements" model to be made emissive (#8890)
+ - 41.0.112 Fix invalid channel names sent from the server causing the network thread to error. (#8902)
+ - 41.0.111 Fix PlayerEvent.BreakSpeed using magic block position to signify invalid position. Closes #8906
+ - 41.0.110 Fix cases where URIs would not work properly with JarInJar (#8900)
+ - 41.0.109 Add new hook to allow modification of lightmap via Dimension special effects (#8863)
+ - 41.0.108 Fix Forge's packet handling on play messages. (#8875)
+ - 41.0.107 Add API for tab list header/footer (#8803)
+ - 41.0.106 Allow modded blocks overriding canStickTo prevent sticking to vanilla blocks/other modded blocks (#8837)
+ - 41.0.105 Multiple tweaks and fixes to the recent changes in the client refactor PR: Part 3 (#8864)
+            Fix weighted baked models not respecting children render types
+            Allow fluid container model to use base texture as particle
+            Fix inverted behavior in composite model building. Fixes #8871
+ - 41.0.104 Fix crossbows not firing ArrowLooseEvent (#8887)
+ - 41.0.103 Add User-Agent header to requests made by the update checker (#8881)
+            Format: Java-http-client/<Java version> MinecraftForge/<ForgeVer> <ModId>/<ModVersion>
+ - 41.0.102 Output the full path in a crash report so it is easier to find the outer mod when a crash in Jar-In-Jar occurs. (#8856)
+ - 41.0.101 Clean up the pick item ("middle mouse click") patches (#8870)
  - 41.0.100 [1.19.x] Hotfix for test mods while the refactor is ongoing
  - 41.0.99  add event to SugarCaneBlock (#8877)
  - 41.0.98  Fix Global Loot Modifiers not using Dispatch Codec (#8859)

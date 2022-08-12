@@ -24,6 +24,9 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
+// DivinityDice
+// True Dice
+
 public class DiceItem extends Item {
     public DiceItem(Properties properties, int slots, int diceTier) {
         super(properties);

@@ -2,6 +2,13 @@
   "item.testsmod.wolframium_ingot": "Wolframium Ingot",
   "item.testsmod.raw_wolframite": "Raw Wolframite",
 
+  "item.testsmod.crystallized_ender_essence_shard": "Crystallized Ender-Essence Shard",
+
+  "item.testsmod.strawberry": "Strawberry",
+  "item.testsmod.blueberry": "Blueberry",
+  "item.testsmod.blackberry": "Blackberry",
+  "item.testsmod.strawberry_seeds": "Strawberry Seeds",
+
   "item.testsmod.10_dice": "10 Dice",
   "item.testsmod.golden_dice": "Golden Dice",
 
@@ -10,7 +17,7 @@
   "item.testsmod.black_dice": "Black Dice",
   "item.testsmod.emerald_dice": "Emerald Dice",
 
-  "item.testsmod.dragon_dice": "Dragonic Dice",
+  "item.testsmod.dragon_dice": "Draconian Dice",
 
   "item.testsmod.ender_dice": "Ender Dice",
   "item.testsmod.saaa_dice": "Saaa Dice",
@@ -24,6 +31,12 @@
   "block.testsmod.deepslate_wolframite_ore": "Deepslate Wolframite Ore",
   "block.testsmod.wolframium_block": "Wolframium Block",
   "block.testsmod.reactor_block": "Reactor",
+  "block.testsmod.end_stone_ender_essence_ore": "End Stone Ender-Essence Ore",
+  "block.testsmod.netherrack_ender_essence_ore": "Netherrack Ender-Essence Ore",
+
+  "block.testsmod.strawberry_crop": "Strawberry Crop",
+
+  "entity.minecraft.villager.testsmod.nuclear_engineer": "Nuclear Engineer",
 
   "itemGroup.artifacts_tab": "Artifacts",
   "itemGroup.hmmm_tab": "Hmmm"

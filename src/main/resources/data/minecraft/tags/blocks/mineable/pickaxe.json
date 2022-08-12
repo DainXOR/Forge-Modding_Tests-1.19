@@ -4,6 +4,8 @@
     "testsmod:wolframium_block",
     "testsmod:wolframite_ore",
     "testsmod:deepslate_wolframite_ore",
-    "testsmod:reactor_block"
+    "testsmod:reactor_block",
+    "testsmod:end_stone_ender_essence_ore",
+    "testsmod:netherrack_ender_essence_ore"
   ]
 }
