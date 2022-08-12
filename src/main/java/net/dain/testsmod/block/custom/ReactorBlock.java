@@ -169,7 +169,7 @@ public class ReactorBlock extends Block {
         affectEntity(level, pos, state, entityOnTop);
         discardEntity();
 
-        if (haveWaterClose(level, pos, state)) {
+        if (haveWaterAround(level, pos, state)) {
             setCooled(level, pos, state, Boolean.TRUE);
         }
 
@@ -280,7 +280,8 @@ public class ReactorBlock extends Block {
     private int distanceToLimit(BlockState state){
         return MAX_USAGE - state.getValue(USAGE);
     }
-    private boolean haveWaterClose(Level level, BlockPos blockPos, BlockState state){
+    private boolean haveWaterAround(Level level, BlockPos blockPos, BlockState state){
+        // level.getBlockStates()
         return false;
     }
 

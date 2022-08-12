@@ -39,5 +39,11 @@
   "entity.minecraft.villager.testsmod.nuclear_engineer": "Nuclear Engineer",
 
   "itemGroup.artifacts_tab": "Artifacts",
-  "itemGroup.hmmm_tab": "Hmmm"
+  "itemGroup.hmmm_tab": "Hmmm",
+
+  "key.category.testsmod": "Tests Mod Category",
+  "key.testsmod.drink_water": "Drink Water",
+
+  "message.testsmod.drink_water": "Water drunk!",
+  "message.testsmod.no_water": "No water nearby..."
 }

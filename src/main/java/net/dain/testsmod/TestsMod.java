@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.dain.testsmod.block.ModBlocks;
 import net.dain.testsmod.block.entity.ModBlockEntities;
 import net.dain.testsmod.item.ModItems;
+import net.dain.testsmod.networking.ModMessages;
 import net.dain.testsmod.painting.ModPaintings;
 import net.dain.testsmod.villager.ModVillagers;
 import net.dain.testsmod.world.feature.ModConfiguredFeatures;
@@ -43,7 +44,7 @@ public class TestsMod
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
-        // Register ourselves for server and other game events we are interested in
+        // Rutilegister ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
     }
 
@@ -52,6 +53,8 @@ public class TestsMod
         event.enqueueWork(() -> {
             ModVillagers.registerPOIs();
         });
+
+        ModMessages.register();
 
         // Some common setup code
         LOGGER.info("HELLO FROM COMMON SETUP");
