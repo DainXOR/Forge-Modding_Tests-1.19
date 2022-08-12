@@ -2,5 +2,6 @@
   "parent": "minecraft:block/crop",
   "textures": {
     "crop": "testsmod:block/strawberry_stage_0"
-  }
+  },
+  "render_type": "cutout"
 }

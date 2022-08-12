@@ -19,7 +19,7 @@ public class ModVillagers {
             DeferredRegister.create(ForgeRegistries.POI_TYPES, TestsMod.MOD_ID);
 
     public static final DeferredRegister<VillagerProfession> VILLAGER_PROFESSIONS =
-            DeferredRegister.create(ForgeRegistries.PROFESSIONS, TestsMod.MOD_ID);
+            DeferredRegister.create(ForgeRegistries.VILLAGER_PROFESSIONS, TestsMod.MOD_ID);
 
     public static final RegistryObject<PoiType> REACTOR_BLOCK_POI = POI_TYPES.register(
             "reactor_block_poi",
