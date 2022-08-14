@@ -43,6 +43,7 @@
 
   "key.category.testsmod": "Tests Mod Category",
   "key.testsmod.drink_water": "Drink Water",
+  "key.testsmod.rpg_stats_menu": "RPG Stats Menu",
 
   "message.testsmod.drink_water": "Water drunk!",
   "message.testsmod.no_water": "No water nearby..."

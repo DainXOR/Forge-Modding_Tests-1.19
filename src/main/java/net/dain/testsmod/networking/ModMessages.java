@@ -3,6 +3,7 @@ package net.dain.testsmod.networking;
 import net.dain.testsmod.TestsMod;
 import net.dain.testsmod.networking.packet.DrinkWaterC2SPacket;
 import net.dain.testsmod.networking.packet.ExampleC2SPacket;
+import net.dain.testsmod.networking.packet.ThirstDataSyncS2CPacket;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraftforge.network.NetworkDirection;
@@ -41,6 +42,11 @@ public class ModMessages {
                 .consumerMainThread(DrinkWaterC2SPacket::handle)
                 .add();
 
+        net.messageBuilder(ThirstDataSyncS2CPacket.class, id(), NetworkDirection.PLAY_TO_CLIENT)
+                .decoder(ThirstDataSyncS2CPacket::new)
+                .encoder(ThirstDataSyncS2CPacket::toBytes)
+                .consumerMainThread(ThirstDataSyncS2CPacket::handle)
+                .add();
     }
 
     public static <MSG> void sendToServer(MSG message){

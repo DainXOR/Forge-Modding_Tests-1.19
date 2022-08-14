@@ -1,19 +1,15 @@
 package net.dain.testsmod.networking.packet;
 
+import net.dain.testsmod.networking.ModMessages;
 import net.dain.testsmod.thirst.PlayerThirstProvider;
 import net.minecraft.ChatFormatting;
-import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.network.NetworkEvent;
 
@@ -56,9 +52,12 @@ public class DrinkWaterC2SPacket {
                         );
 
                 player.getCapability(PlayerThirstProvider.PLAYER_THIRST).ifPresent(thirst -> {
-                    thirst.addThirst(1);
+                    thirst.increaseWater(1, 0);
                     player.sendSystemMessage(Component.literal("Current thirst: " + thirst.getThirst())
                             .withStyle(ChatFormatting.AQUA));
+                    player.sendSystemMessage(Component.literal("Current satiety: " + thirst.getSatiety())
+                            .withStyle(ChatFormatting.AQUA));
+                    ModMessages.sendToPlayer(new ThirstDataSyncS2CPacket(thirst.getThirst(), thirst.getSatiety()), player);
                 });
 
 
@@ -69,6 +68,9 @@ public class DrinkWaterC2SPacket {
                 player.getCapability(PlayerThirstProvider.PLAYER_THIRST).ifPresent(thirst -> {
                     player.sendSystemMessage(Component.literal("Current thirst: " + thirst.getThirst())
                             .withStyle(ChatFormatting.AQUA));
+                    player.sendSystemMessage(Component.literal("Current satiety: " + thirst.getSatiety())
+                            .withStyle(ChatFormatting.AQUA));
+                    ModMessages.sendToPlayer(new ThirstDataSyncS2CPacket(thirst.getThirst(), thirst.getSatiety()), player);
                 });
             }
 

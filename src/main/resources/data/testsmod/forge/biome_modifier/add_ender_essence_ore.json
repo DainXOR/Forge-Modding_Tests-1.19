@@ -1,6 +1,11 @@
 {
   "type": "forge:add_features",
-  "biomes":"#minecraft:is_end",
+  "biomes":[
+    "warped_forest",
+    "the_end",
+    "end_midlands",
+    "end_highlands"
+  ],
   "features": "testsmod:ender_essence_ore_placed",
   "step": "underground_ores"
 }
