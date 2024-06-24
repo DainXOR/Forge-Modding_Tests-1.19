@@ -1,5 +1,354 @@
 {
   "variants": {
+    "powered=false,unstable=false,cooled=false,power=2": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=false,cooled=false,power=2": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=true,cooled=false,power=2": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=true,cooled=false,power=2": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=false,cooled=true,power=2": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=false,cooled=true,power=2": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=true,cooled=true,power=2": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=true,cooled=true,power=2": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+
+    "powered=false,unstable=false,cooled=false,power=3": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=false,cooled=false,power=3": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=true,cooled=false,power=3": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=true,cooled=false,power=3": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=false,cooled=true,power=3": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=false,cooled=true,power=3": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=true,cooled=true,power=3": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=true,cooled=true,power=3": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+
+    "powered=false,unstable=false,cooled=false,power=4": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=false,cooled=false,power=4": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=true,cooled=false,power=4": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=true,cooled=false,power=4": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=false,cooled=true,power=4": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=false,cooled=true,power=4": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=true,cooled=true,power=4": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=true,cooled=true,power=4": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+
+    "powered=false,unstable=false,cooled=false,power=5": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=false,cooled=false,power=5": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=true,cooled=false,power=5": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=true,cooled=false,power=5": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=false,cooled=true,power=5": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=false,cooled=true,power=5": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=true,cooled=true,power=5": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=true,cooled=true,power=5": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+
+    "powered=false,unstable=false,cooled=false,power=6": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=false,cooled=false,power=6": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=true,cooled=false,power=6": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=true,cooled=false,power=6": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=false,cooled=true,power=6": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=false,cooled=true,power=6": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=true,cooled=true,power=6": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=true,cooled=true,power=6": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+
+    "powered=false,unstable=false,cooled=false,power=7": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=false,cooled=false,power=7": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=true,cooled=false,power=7": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=true,cooled=false,power=7": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=false,cooled=true,power=7": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=false,cooled=true,power=7": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=true,cooled=true,power=7": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=true,cooled=true,power=7": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+
+    "powered=false,unstable=false,cooled=false,power=8": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=false,cooled=false,power=8": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=true,cooled=false,power=8": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=true,cooled=false,power=8": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=false,cooled=true,power=8": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=false,cooled=true,power=8": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=true,cooled=true,power=8": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=true,cooled=true,power=8": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+
+    "powered=false,unstable=false,cooled=false,power=9": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=false,cooled=false,power=9": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=true,cooled=false,power=9": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=true,cooled=false,power=9": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=false,cooled=true,power=9": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=false,cooled=true,power=9": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=true,cooled=true,power=9": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=true,cooled=true,power=9": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+
+    "powered=false,unstable=false,cooled=false,power=10": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=false,cooled=false,power=10": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=true,cooled=false,power=10": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=true,cooled=false,power=10": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=false,cooled=true,power=10": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=false,cooled=true,power=10": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=true,cooled=true,power=10": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=true,cooled=true,power=10": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+
+    "powered=false,unstable=false,cooled=false,power=11": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=false,cooled=false,power=11": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=true,cooled=false,power=11": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=true,cooled=false,power=11": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=false,cooled=true,power=11": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=false,cooled=true,power=11": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=true,cooled=true,power=11": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=true,cooled=true,power=11": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+
+    "powered=false,unstable=false,cooled=false,power=12": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=false,cooled=false,power=12": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=true,cooled=false,power=12": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=true,cooled=false,power=12": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=false,cooled=true,power=12": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=false,cooled=true,power=12": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=true,cooled=true,power=12": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=true,cooled=true,power=12": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+
+    "powered=false,unstable=false,cooled=false,power=13": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=false,cooled=false,power=13": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=true,cooled=false,power=13": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=true,cooled=false,power=13": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=false,cooled=true,power=13": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=false,cooled=true,power=13": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=true,cooled=true,power=13": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=true,cooled=true,power=13": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+
+    "powered=false,unstable=false,cooled=false,power=14": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=false,cooled=false,power=14": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=true,cooled=false,power=14": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=true,cooled=false,power=14": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=false,cooled=true,power=14": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=false,cooled=true,power=14": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=true,cooled=true,power=14": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=true,cooled=true,power=14": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+
+    "powered=false,unstable=false,cooled=false,power=15": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=false,cooled=false,power=15": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=true,cooled=false,power=15": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=true,cooled=false,power=15": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=false,cooled=true,power=15": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=false,cooled=true,power=15": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
+    "powered=false,unstable=true,cooled=true,power=15": {
+      "model":  "testsmod:block/reactor_block_inactive"
+    },
+    "powered=true,unstable=true,cooled=true,power=15": {
+      "model":  "testsmod:block/reactor_block_active"
+    },
     "": {"model":  "testsmod:block/reactor_block"}
   }
 }

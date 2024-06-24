@@ -8,8 +8,6 @@ import net.dain.testsmod.networking.packet.ThirstDataSyncS2CPacket;
 import net.dain.testsmod.thirst.PlayerThirst;
 import net.dain.testsmod.thirst.PlayerThirstProvider;
 import net.dain.testsmod.villager.ModVillagers;
-import net.minecraft.ChatFormatting;
-import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.damagesource.DamageSource;
@@ -42,7 +40,7 @@ public class ModEvents {
     public static void addCustomTrades(VillagerTradesEvent tradesEvent){
         if(tradesEvent.getType() == VillagerProfession.CLERIC){
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = tradesEvent.getTrades();
-            ItemStack stack = new ItemStack(ModItems.CERO_ONE_DICE.get(), 1);
+            ItemStack stack = new ItemStack(ModItems.ZERO_ONE_DICE.get(), 1);
             int villagerLevel = 5;
 
             trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
@@ -339,12 +337,12 @@ public class ModEvents {
                 if(player.getUseItem().isEdible()){
                     randomTickThreshold += randomTickThreshold * 100f;
 
-
+                } else if (thirst.getThirst() < thirst.MAX_THIRST && thirst.hasFinishDrinking()) {
                     thirst.increaseWater(2, 1);
                     ModMessages.sendToPlayer(new ThirstDataSyncS2CPacket(thirst.getThirst(), thirst.getSatiety()), (ServerPlayer) player);
                 }
 
-                // Updates thirst if random tick
+                // Reduce thirst if random tick
                 if(thirst.getThirst() > 0 && player.getRandom().nextFloat() < randomTickThreshold){
                     thirst.decreaseWater(1);
                     ModMessages.sendToPlayer(new ThirstDataSyncS2CPacket(thirst.getThirst(), thirst.getSatiety()), (ServerPlayer) player);

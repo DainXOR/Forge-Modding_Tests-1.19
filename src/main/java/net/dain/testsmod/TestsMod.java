@@ -2,7 +2,10 @@ package net.dain.testsmod;
 
 import com.mojang.logging.LogUtils;
 import net.dain.testsmod.block.ModBlocks;
+import net.dain.testsmod.block.custom.ReactorBlock;
 import net.dain.testsmod.block.entity.ModBlockEntities;
+import net.dain.testsmod.fluid.ModFluidTypes;
+import net.dain.testsmod.fluid.ModFluids;
 import net.dain.testsmod.item.ModItems;
 import net.dain.testsmod.networking.ModMessages;
 import net.dain.testsmod.painting.ModPaintings;
@@ -38,6 +41,8 @@ public class TestsMod
         BlockBehaviour.Properties.of(new Material.Builder(MaterialColor.COLOR_BLACK).build());
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModFluids.register(modEventBus);
+        ModFluidTypes.register(modEventBus);
 
         //ModBlockEntities.register(modEventBus);
         ModPaintings.register(modEventBus);
@@ -45,9 +50,9 @@ public class TestsMod
 
         ModConfiguredFeatures.register(modEventBus);
         ModPlacedFeature.register(modEventBus);
+
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
-
         // Rutilegister ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
     }
@@ -70,9 +75,11 @@ public class TestsMod
     public static class ClientModEvents
     {
         @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event)
-        {
+        public static void onClientSetup(FMLClientSetupEvent event){
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.REACTOR_BLOCK.get(), RenderType.translucent());
 
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_ENDER_ESSENCE_FLUID.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_ENDER_ESSENCE_FLUID.get(), RenderType.translucent());
         }
     }
 }

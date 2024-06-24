@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "testsmod:block/reactor_block_anim"
-  }
-}

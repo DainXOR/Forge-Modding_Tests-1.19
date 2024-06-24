@@ -40,7 +40,6 @@ public class DrinkWaterC2SPacket {
             ServerLevel level = player.getLevel();
 
             if(hasWaterAround(player, level)){
-                player.sendSystemMessage(Component.translatable(DRINK_WATER_MESSAGE).withStyle(ChatFormatting.DARK_AQUA));
 
                 level.playSound(
                         null,
@@ -53,24 +52,15 @@ public class DrinkWaterC2SPacket {
 
                 player.getCapability(PlayerThirstProvider.PLAYER_THIRST).ifPresent(thirst -> {
                     thirst.increaseWater(1, 0);
-                    player.sendSystemMessage(Component.literal("Current thirst: " + thirst.getThirst())
-                            .withStyle(ChatFormatting.AQUA));
-                    player.sendSystemMessage(Component.literal("Current satiety: " + thirst.getSatiety())
-                            .withStyle(ChatFormatting.AQUA));
                     ModMessages.sendToPlayer(new ThirstDataSyncS2CPacket(thirst.getThirst(), thirst.getSatiety()), player);
                 });
-
-
             }
             else {
-                player.sendSystemMessage(Component.translatable(NO_WATER_MESSAGE).withStyle(ChatFormatting.RED));
-
                 player.getCapability(PlayerThirstProvider.PLAYER_THIRST).ifPresent(thirst -> {
                     player.sendSystemMessage(Component.literal("Current thirst: " + thirst.getThirst())
                             .withStyle(ChatFormatting.AQUA));
                     player.sendSystemMessage(Component.literal("Current satiety: " + thirst.getSatiety())
                             .withStyle(ChatFormatting.AQUA));
-                    ModMessages.sendToPlayer(new ThirstDataSyncS2CPacket(thirst.getThirst(), thirst.getSatiety()), player);
                 });
             }
 

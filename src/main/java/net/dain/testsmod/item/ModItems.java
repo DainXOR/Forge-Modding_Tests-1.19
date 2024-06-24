@@ -3,12 +3,10 @@ package net.dain.testsmod.item;
 
 import net.dain.testsmod.TestsMod;
 import net.dain.testsmod.block.ModBlocks;
+import net.dain.testsmod.fluid.ModFluids;
 import net.dain.testsmod.item.custom.DiceItem;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemNameBlockItem;
-import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -110,7 +108,7 @@ public class ModItems {
                             .stacksTo(1)
                     ,2, 1));
 
-    public static final RegistryObject<Item> CERO_ONE_DICE =
+    public static final RegistryObject<Item> ZERO_ONE_DICE =
             ITEMS.register("0_1_dice", () -> new DiceItem(
                     new Item.Properties().tab(DainCreativeModeTab.ARTIFACTS_TAB)
                             .stacksTo(1)
@@ -132,6 +130,29 @@ public class ModItems {
     public static final RegistryObject<Item> BLACKBERRY = ITEMS.register("blackberry",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD)
                     .food(new FoodProperties.Builder().fast().nutrition(2).saturationMod(1f).build())));
+
+    public static final RegistryObject<Item> ENDER_ESSENCE_BUCKET =
+            ITEMS.register(
+                    "ender_essence_bucket",
+                    () -> new BucketItem(
+                            ModFluids.SOURCE_ENDER_ESSENCE_FLUID,
+                            new Item.Properties()
+                                    .tab(CreativeModeTab.TAB_MISC)
+                                    .rarity(Rarity.EPIC)
+                                    .craftRemainder(Items.BUCKET)
+                                    .stacksTo(1)
+                    ));
+    public static final RegistryObject<Item> CONTAMINATED_WATER_BUCKET =
+            ITEMS.register(
+                    "contaminated_water_bucket",
+                    () -> new BucketItem(
+                            ModFluids.SOURCE_CONTAMINATED_WATER_FLUID,
+                            new Item.Properties()
+                                    .tab(CreativeModeTab.TAB_MISC)
+                                    .rarity(Rarity.COMMON)
+                                    .craftRemainder(Items.BUCKET)
+                                    .stacksTo(1)
+                    ));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
